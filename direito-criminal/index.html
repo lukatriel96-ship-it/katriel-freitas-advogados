@@ -49,6 +49,22 @@
   gtag("js", new Date());
   gtag("config", "AW-SEU_ID");
 </script>
+  <script>
+  function gtag_report_conversion(url) {
+    const callback = function () {
+      if (typeof url !== "undefined") {
+        window.location = url;
+      }
+    };
+
+    gtag("event", "conversion", {
+      send_to: "AW-SEU_ID/SEU_ROTULO_DE_CONVERSAO",
+      event_callback: callback
+    });
+
+    return false;
+  }
+</script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
