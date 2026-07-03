@@ -1,8 +1,33 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-18206900737", "config": { "AW-18206900737": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics> 
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18206900737"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18206900737'); </script> 
+  <!-- Google tag (gtag.js) - Tag Principal -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18206900737"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18206900737');
+  </script> 
+
+  <!-- Função para monitorar o clique real nos botões de WhatsApp -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18206900737/8xzZCJj58MgcEIGE3elD',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#082b35" />
@@ -20,22 +45,22 @@
   <meta property="og:url" content="https://www.katrielfreitasadvogados.com.br/direito-criminal/" />
   <meta property="og:image" content="https://i.postimg.cc/HLWG8m9K/logo-katriel-freitas-transparente.png" />
   <title>Direito Criminal | Katriel &amp; Freitas Advogados</title>
+  
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Katriel & Freitas Advogados",
-  "url": "https://www.katrielfreitasadvogados.com.br/direito-criminal/",
-  "telephone": [
-    "+55 21 96404-6039",
-    "+55 21 96539-8090"
-  ],
-  "areaServed": "BR",
-  "serviceType": "Direito Criminal",
-  "description": "Atuação jurídica em investigações, inquéritos, medidas urgentes, ações penais, audiências e recursos, conforme as particularidades de cada caso."
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Katriel & Freitas Advogados",
+    "url": "https://www.katrielfreitasadvogados.com.br/direito-criminal/",
+    "telephone": [
+      "+55 21 96404-6039",
+      "+55 21 96539-8090"
+    ],
+    "areaServed": "BR",
+    "serviceType": "Direito Criminal",
+    "description": "Atuação jurídica em investigações, inquéritos, medidas urgentes, ações penais, audiências e recursos, conforme as particularidades de cada caso."
+  }
   </script>
-<!-- Event snippet for Contato (3) conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-18206900737/8xzZCJj58MgcEIGE3elD', 'value': 1.0, 'currency': 'BRL' }); </script> 
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
@@ -61,17 +86,14 @@
       <div class="area-grid-lines" aria-hidden="true"></div>
       <div class="shell area-hero-layout">
         <div class="area-hero-copy reveal">
-          <p class="kicker"><span>Defesa técnica e acompanhamento jurídico</span><span>Atendimento em todo o Brasil</span></p>
+          <p class="kicker"><span>Defesa técnica e acompanhamento jurídica</span><span>Atendimento em todo o Brasil</span></p>
           <h1>Atuação criminal com análise técnica, discrição e resposta adequada a cada fase.</h1>
           <p class="area-hero-lead">Orientação e defesa em investigações, inquéritos, medidas urgentes, ações penais, audiências e recursos, com avaliação individual dos fatos e documentos.</p>
           <div class="hero-actions">
-            <a class="button button-gold" <a
-   href="https://wa.me/5521964046039?text=Ol%C3%A1%2C%20encontrei%20o%20escrit%C3%B3rio%20no%20Google%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20em%20Direito%20Criminal."
-  class="whatsapp-conversion"
-  onclick="return gtag_report_conversion(this.href);"
->
-  Solicitar atendimento
-</a>
+            <!-- BOTÃO 1 CORRIGIDO ABAIXO -->
+            <a href="https://wa.me/5521964046039?text=Ol%C3%A1%2C%20encontrei%20o%20escrit%C3%B3rio%20no%20Google%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20em%20Direito%20Criminal." class="button button-gold whatsapp-conversion" onclick="return gtag_report_conversion(this.href);">
+              Solicitar atendimento
+            </a>
             <a class="button button-ghost" href="#servicos">Conhecer a atuação</a>
           </div>
         </div>
@@ -102,11 +124,11 @@
         </div>
         <div class="area-service-grid">
           <article class="area-service-card reveal"><span>01</span><h3>Orientação inicial e medidas urgentes</h3><p>Análise da situação apresentada e orientação sobre providências imediatas juridicamente cabíveis.</p></article>
-<article class="area-service-card reveal"><span>02</span><h3>Acompanhamento em delegacias</h3><p>Assistência jurídica em procedimentos policiais, oitivas e demais atos que exijam acompanhamento profissional.</p></article>
-<article class="area-service-card reveal"><span>03</span><h3>Investigações e inquéritos</h3><p>Acompanhamento técnico de investigações, análise documental e apresentação das medidas defensivas adequadas.</p></article>
-<article class="area-service-card reveal"><span>04</span><h3>Ações penais</h3><p>Defesa em processos criminais, com elaboração de manifestações, participação em audiências e acompanhamento processual.</p></article>
-<article class="area-service-card reveal"><span>05</span><h3>Medidas cautelares e liberdade</h3><p>Análise de medidas cautelares, prisões e restrições, com adoção das providências juridicamente cabíveis.</p></article>
-<article class="area-service-card reveal"><span>06</span><h3>Recursos e tribunais</h3><p>Elaboração e acompanhamento de recursos e outras medidas perante os tribunais competentes.</p></article>
+          <article class="area-service-card reveal"><span>02</span><h3>Acompanhamento em delegacias</h3><p>Assistência jurídica em procedimentos policiais, oitivas e demais atos que exijam acompanhamento profissional.</p></article>
+          <article class="area-service-card reveal"><span>03</span><h3>Investigações e inquéritos</h3><p>Acompanhamento técnico de investigações, análise documental e apresentação das medidas defensivas adequadas.</p></article>
+          <article class="area-service-card reveal"><span>04</span><h3>Ações penais</h3><p>Defesa em processos criminais, com elaboração de manifestações, participação em audiências e acompanhamento processual.</p></article>
+          <article class="area-service-card reveal"><span>05</span><h3>Medidas cautelares e liberdade</h3><p>Análise de medidas cautelares, prisões e restrições, com adoção das providências juridicamente cabíveis.</p></article>
+          <article class="area-service-card reveal"><span>06</span><h3>Recursos e tribunais</h3><p>Elaboração e acompanhamento de recursos e outras medidas perante os tribunais competentes.</p></article>
         </div>
       </div>
     </section>
@@ -116,21 +138,25 @@
         <article class="area-list-panel reveal">
           <p class="section-index">03 · Quando buscar orientação</p>
           <h2>A avaliação jurídica pode ser relevante quando existe:</h2>
-          <ul><li>recebimento de intimação, mandado ou comunicação policial ou judicial</li>
-<li>necessidade de acompanhamento em delegacia ou audiência</li>
-<li>existência de investigação ou inquérito policial</li>
-<li>prisão, medida cautelar ou restrição de direitos</li>
-<li>oferecimento de denúncia ou andamento de ação penal</li>
-<li>necessidade de recurso ou análise de decisão criminal</li></ul>
+          <ul>
+            <li>recebimento de intimação, mandado ou comunicação policial ou judicial</li>
+            <li>necessidade de acompanhamento em delegacia ou audiência</li>
+            <li>existência de investigação ou inquérito policial</li>
+            <li>prisão, medida cautelar ou restrição de direitos</li>
+            <li>oferecimento de denúncia ou andamento de ação penal</li>
+            <li>necessidade de recurso ou análise de decisão criminal</li>
+          </ul>
         </article>
         <article class="area-list-panel area-list-panel-dark reveal delay-1">
           <p class="section-index light">04 · Informações iniciais</p>
           <h2>Documentos que podem auxiliar a primeira análise:</h2>
-          <ul><li>documentos pessoais</li>
-<li>intimações, mandados, boletins ou comunicações recebidas</li>
-<li>número do processo ou do procedimento, quando disponível</li>
-<li>decisões, depoimentos, mensagens e documentos relacionados aos fatos</li>
-<li>informações sobre datas, locais e pessoas envolvidas</li></ul>
+          <ul>
+            <li>documentos pessoais</li>
+            <li>intimações, mandados, boletins ou comunicações recebidas</li>
+            <li>número do processo ou do procedimento, quando disponível</li>
+            <li>decisões, depoimentos, mensagens e documentos relacionados aos fatos</li>
+            <li>informações sobre datas, locais e pessoas envolvidas</li>
+          </ul>
           <p class="area-list-note">A ausência de algum documento não impede o primeiro contato. A necessidade de complementação será indicada durante o atendimento.</p>
         </article>
       </div>
@@ -154,17 +180,19 @@
     <section class="section area-faq-section" id="perguntas">
       <div class="shell area-faq-layout">
         <div class="reveal"><p class="section-index">06 · Perguntas frequentes</p><h2>Informações iniciais sobre o atendimento.</h2></div>
-        <div><details class="area-faq reveal"><summary>Recebi uma intimação. O que devo fazer?</summary><p>A intimação deve ser lida integralmente e analisada antes da adoção de qualquer providência. O atendimento jurídico permite compreender o ato, o prazo e a forma adequada de resposta.</p></details>
-<details class="area-faq reveal"><summary>O atendimento pode ser realizado em situação urgente?</summary><p>A possibilidade de atendimento depende da disponibilidade profissional e das circunstâncias apresentadas. No primeiro contato, informe objetivamente a urgência e encaminhe os documentos recebidos.</p></details>
-<details class="area-faq reveal"><summary>É possível garantir absolvição ou liberdade?</summary><p>Não. Nenhum resultado pode ser garantido. A atuação jurídica consiste na análise técnica do caso e na adoção das medidas permitidas pela legislação.</p></details>
-<details class="area-faq reveal"><summary>As informações do atendimento são tratadas com confidencialidade?</summary><p>O atendimento jurídico observa os deveres profissionais de sigilo e confidencialidade, dentro dos limites legais e éticos aplicáveis.</p></details></div>
+        <div>
+          <details class="area-faq reveal"><summary>Recebi uma intimação. O que devo fazer?</summary><p>A intimação deve ser lida integralmente e analisada antes da adoção de qualquer providência. O atendimento jurídico permite compreender o ato, o prazo e a forma adequada de resposta.</p></details>
+          <details class="area-faq reveal"><summary>O atendimento pode ser realizado em situação urgente?</summary><p>A possibilidade de atendimento depende da disponibilidade profissional e das circunstâncias apresentadas. No primeiro contato, informe objetivamente a urgência e encaminhe os documentos recebidos.</p></details>
+          <details class="area-faq reveal"><summary>É possível garantir absolvição ou liberdade?</summary><p>Não. Nenhum resultado pode ser garantido. A atuação jurídica consiste na análise técnica do caso e na adoção das medidas permitidas pela legislação.</p></details>
+          <details class="area-faq reveal"><summary>As informações do atendimento são tratadas com confidencialidade?</summary><p>O atendimento jurídico observa os deveres profissionais de sigilo e confidencialidade, dentro dos limites legais e éticos aplicáveis.</p></details>
+        </div>
       </div>
     </section>
 
     <section class="contact-section" id="contato">
       <div class="shell area-contact-layout">
         <div class="contact-copy reveal">
-          <p class="section-index light">07 · Contato</p>
+          <p class="section-index light">07 · Contacto</p>
           <h2>Conte brevemente o que aconteceu.</h2>
           <p>Informe a natureza da demanda, os documentos já disponíveis e a existência de prazo, audiência ou situação urgente.</p>
         </div>
@@ -172,12 +200,10 @@
           <span>Direito Criminal</span>
           <h3>Solicite uma análise inicial pelo WhatsApp.</h3>
           <p>O primeiro contato será utilizado para compreender a demanda e orientar os próximos passos.</p>
-          <a class="button button-gold"  href="https://wa.me/5521964046039?text=Ol%C3%A1%2C%20encontrei%20o%20escrit%C3%B3rio%20no%20Google%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20em%20Direito%20Criminal."
-  class="whatsapp-conversion"
-  onclick="return gtag_report_conversion(this.href);"
->
-  Solicitar atendimento
-</a>
+          <!-- BOTÃO 2 CORRIGIDO ABAIXO -->
+          <a href="https://wa.me/5521964046039?text=Ol%C3%A1%2C%20encontrei%20o%20escrit%C3%B3rio%20no%20Google%20e%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20em%20Direito%20Criminal." class="button button-gold whatsapp-conversion" onclick="return gtag_report_conversion(this.href);">
+            Solicitar atendimento
+          </a>
           <small>Nenhum resultado é garantido. A atuação depende das particularidades de cada caso.</small>
         </div>
       </div>
